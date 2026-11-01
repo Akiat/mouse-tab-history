@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mouse Tab History settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="icons/icon-48.png" alt="" width="48" height="48" />
+        <div>
+          <h1>Mouse Tab History</h1>
+          <p>Go back and forward through the tabs you viewed.</p>
+        </div>
+      </header>
+
+      <section aria-labelledby="mouse-heading">
+        <h2 id="mouse-heading">Mouse shortcuts</h2>
+        <div class="row">
+          <span id="previous-label">Previous tab</span>
+          <button id="previous-button" class="recorder" aria-labelledby="previous-label previous-button"></button>
+        </div>
+        <div class="row">
+          <span id="next-label">Next tab</span>
+          <button id="next-button" class="recorder" aria-labelledby="next-label next-button"></button>
+        </div>
+        <p id="mouse-status" class="status" role="status"></p>
+        <p class="hint">
+          To change one, click it, hold any modifier keys and press a mouse side button. If you
+          choose a side button with no modifier, it stops going back a page.
+        </p>
+        <button id="reset" class="secondary">Reset to defaults</button>
+
+        <div class="notice">
+          <h3>Mouse shortcuts only work on web pages</h3>
+          <p>
+            Browsers don't show extensions the clicks made outside a web page. Your mouse shortcut
+            does nothing while the pointer is on the tab strip, the address bar or the bookmarks
+            bar, or on browser pages like Settings, Extensions, the New Tab page and the Web Store.
+          </p>
+          <p>Use a keyboard shortcut in those places.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="keyboard-heading">
+        <h2 id="keyboard-heading">Keyboard shortcuts</h2>
+        <div class="row">
+          <span>Previous tab</span>
+          <kbd id="previous-keys"></kbd>
+        </div>
+        <div class="row">
+          <span>Next tab</span>
+          <kbd id="next-keys"></kbd>
+        </div>
+        <p class="hint">
+          These work anywhere in the browser. Extensions can't change their own keyboard shortcuts,
+          so you set them on your browser's shortcuts page.
+        </p>
+        <button id="open-shortcuts" class="secondary">Change keyboard shortcuts</button>
+      </section>
+
+      <section aria-labelledby="history-heading">
+        <h2 id="history-heading">How the history works</h2>
+        <ul>
+          <li>Each window keeps its own history.</li>
+          <li>Closed tabs are skipped.</li>
+          <li>If you go back and then open a different tab, the forward tabs are dropped, like page history.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="shortcuts.js"></script>
+    <script src="content.js"></script>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

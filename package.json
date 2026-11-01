@@ -1,0 +1,10 @@
+{
+  "name": "mouse-tab-history",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "package": "zip -r mouse-tab-history.zip manifest.json background.js content.js history.js shortcuts.js options.html options.css options.js icons -x 'icons/*.svg'"
+  },
+  "license": "MIT"
+}
