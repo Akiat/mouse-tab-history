@@ -6,6 +6,8 @@
 
 <p align="center">Back and forward buttons for your tabs, on your mouse.</p>
 
+<p align="center"><a href="https://chromewebstore.google.com/detail/mouse-tab-history/poegjfkohemdiedbemfacgdecnlflmnj">Install from the Chrome Web Store</a></p>
+
 Your browser remembers the pages you visit in each tab, but it has no back button for the tabs themselves. Mouse Tab History adds one. Go from tab A to B to C, and "previous" takes you to B, then A. "Next" takes you forward again.
 
 Most tab switchers cycle through recently used tabs. Mouse Tab History keeps them in a straight line, so pressing previous twice goes two tabs back.
@@ -27,7 +29,9 @@ Browsers manage extension keyboard shortcuts themselves, so you change those at 
 
 ## Install
 
-Mouse Tab History isn't on the Chrome Web Store yet, so you load it from source.
+Install Mouse Tab History from the [Chrome Web Store](https://chromewebstore.google.com/detail/mouse-tab-history/poegjfkohemdiedbemfacgdecnlflmnj). Brave and most other Chromium browsers can install it from there too.
+
+To run it from source instead:
 
 1. Clone the repository:
 
